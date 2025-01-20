@@ -15,6 +15,8 @@ body {
     background-size: cover;
 }
 
+/*------------------------------------------ header section --------------------------------------- */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -117,5 +119,63 @@ nav {
     padding-right: 10px;
 } 
 
+/*------------------------------------------ main left section ------------------------------------ */
 
+main {
+    margin-top: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.main-left-section {
+    width: 600px;
+}
+
+.main-left-section p {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    line-height: 33px;  
+    color: #D0D6F9;
+}
+
+.main-left-section h1 { 
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    letter-spacing: 4.72px;
+    line-height: 170px;  
+    color: #FFFFFF;
+}
+
+.main-left-section .last-para {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 4.72px;
+    line-height: 25px;  
+    color: #D0D6F9;
+}
+
+/*------------------------------------------ main right section ------------------------------------ */
+
+.main-right-section .white-back {
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-right-section .white-back h3 {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
