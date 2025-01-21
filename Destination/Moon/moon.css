@@ -186,14 +186,10 @@ li label:hover {
     color: #FFFFFF;
 } 
 
-#mars:checked ~ li>label[for="mars"] {
+#mars:checked ~ li>label[for="mars"]{
     border-bottom: 3px solid #FFFFFF;
     color: #FFFFFF;
-} 
-
-#mars:checked ~ .moon-sec {
-    margin-left: -600px;
-} 
+}
 
 
 #europa:checked ~ li>label[for="europa"] {
@@ -227,8 +223,6 @@ li label:hover {
 
 .moon-right-section {
     width: 50%;
-    margin-left: 120px;
-    /* border: 2px solid red; */
 }
 
 .moon-right-section h1 {
@@ -287,11 +281,3 @@ li label:hover {
     font-weight: 400;
 }
 
-.outer-div-container {
-    display: flex;
-    overflow: hidden;
-}
-
-.moon-sec.two {
-    margin-left: 500px;
-}
