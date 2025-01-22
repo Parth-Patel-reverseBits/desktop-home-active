@@ -182,25 +182,63 @@ li label:hover {
 }
 
 #moon:checked ~ li>label[for="moon"] {
-    border-bottom: 3px solid #FFFFFF;
     color: #FFFFFF;
 } 
 
-#mars:checked ~ li>label[for="mars"]{
-    border-bottom: 3px solid #FFFFFF;
+#mars:checked ~ li>label[for="mars"] {
     color: #FFFFFF;
-}
-
+} 
 
 #europa:checked ~ li>label[for="europa"] {
-    border-bottom: 3px solid #FFFFFF;
     color: #FFFFFF;
 } 
 
 #titan:checked ~ li>label[for="titan"] {
-    border-bottom: 3px solid #FFFFFF;
     color: #FFFFFF;
 } 
+
+
+.underline {
+    transition: all 0.5s ease-in-out;
+}
+
+#moon:checked ~ .underline {
+    position: absolute;
+    bottom: -16px;
+    left: 19px;
+    width: 44px;
+    height: 3px;
+    background-color: #FFFFFF;
+}
+
+#mars:checked ~ .underline{
+    position: absolute;
+    bottom: -16px;
+    left: 100px;
+    width: 44px;
+    height: 3px;
+    background-color: #FFFFFF;
+}
+
+#europa:checked ~ .underline{
+    position: absolute;
+    bottom: -16px;
+    left: 181px;
+    width: 58.5px;
+    height: 3px;
+    background-color: #FFFFFF;
+}
+
+
+#titan:checked ~ .underline{
+    position: absolute;
+    bottom: -16px;
+    left: 280px;
+    width: 44px;
+    height: 3px;
+    background-color: #FFFFFF;
+}
+
 
 
 .moon-sec {
