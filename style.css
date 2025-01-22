@@ -85,7 +85,8 @@ nav {
     background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(81.55px);
     border: 1px solid  rgba(0, 0, 0, 0.1);
-    padding: 30px 250px 30px 60px;
+    padding-right: 100px;
+    border-radius: 5px;
 }
 
 .transparent-back ul {
@@ -95,6 +96,7 @@ nav {
 }
 
 .transparent-back ul a{ 
+    padding: 35px 50px 35px 50px; 
     text-decoration: none;
     letter-spacing: 2.7px;
     font-family: "Barlow Condensed", serif;
@@ -104,11 +106,15 @@ nav {
 }
 
 .transparent-back ul li{ 
-    padding: 0px 10px 0px 40px;
+    /* padding: 35px 60px 35px 65px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.transparent-back ul li:hover {
+    border-bottom: 3px solid #FFFFFF;
+} 
 
 .transparent-back ul span {
     font-family: "Barlow Condensed", serif;
