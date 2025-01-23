@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    background: url(Desktop-Crew-A.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*------------------------------------------ header section --------------------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.logo-section {
+    padding-left: 50px;
+}
+
+.black-backgorund {
+    position: relative;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.white-circle-one {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-bottom-right-radius: 100%;
+}
+
+.white-circle-two {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin-top: 1px;
+    border-top-right-radius: 100%;
+}
+
+.white-circle-three {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-bottom-left-radius: 100%;
+}
+
+.white-circle-four {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-top-left-radius: 100%;
+}
+
+.center-line {
+    position: absolute;
+    z-index: 110;
+    left: 180px;
+    width: 475px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.267);
+}
+
+
+.transparent-back {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(81.55px);
+    border: 1px solid  rgba(0, 0, 0, 0.1);
+    padding-right: 100px;
+    border-radius: 5px;
+}
+
+.transparent-back ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.transparent-back ul a{ 
+    padding: 35px 50px 35px 50px; 
+    text-decoration: none;
+    letter-spacing: 2.7px;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;  
+}
+
+.transparent-back ul li{ 
+    /* padding: 35px 60px 35px 65px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent-back ul li:hover {
+    border-bottom: 3px solid #FFFFFF;
+} 
+
+.transparent-back ul span {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px; 
+    letter-spacing: 2.7px;
+    padding-right: 10px;
+}
+
+
+/*---------------------------------------------- main title ----------------------------------------*/
+
+.main-title {
+    margin-top: 60px;
+    margin-left: 180px;
+    /* border: 2px solid red; */
+}
+
+.main-title span {
+    font-family: "Barlow Condensed", serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;
+    color: rgba(255, 255, 255, 0.25);
+    padding-right: 20px;
+}
+
+.main-title h1 { 
+    font-family: "Barlow Condensed", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;   
+}
+
+/*--------------------------------------------- content section -----------------------------------------*/
+
+.container {
+    display: flex;
+}
+
+.content-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+}
+
+
+.content-section h3 {
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.67px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+.content-section h1 { 
+    padding-top: 10px;
+    font-family: "Bellefair", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64.18px;
+    text-transform: uppercase;
+}
+
+.inner-content-section p{ 
+    padding-top: 20px;
+    font-family: "Barlow", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;    
+    color: rgba(208, 214, 249, 1);
+}
+
+.image-section {
+    display: flex;
+    justify-content: center; 
+    width: 50%;
+}
+
+.image-section img {
+    width: 460px;
+    margin-top: -50px;
+}
+
+
+/*---------------------------------------------- slider section  ---------------------------------------*/
+
+.slider-section {
+    margin-top: 100px;
+}
+
+.slider-section ul{
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+}
+
+.slider-section ul li {
+    padding-right: 25px;
+}
+
+.slider-section a{
+    display: block;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-section a input {
+    cursor: pointer;
+    display: block;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.17);
+    color: rgba(255, 255, 255, 0.17);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+
