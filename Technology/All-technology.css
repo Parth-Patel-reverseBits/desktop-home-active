@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url('technology-backgorund.png');
+    background-size: cover;
+}
+
+/*------------------------------------------ header section --------------------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.logo-section {
+    padding-left: 50px;
+}
+
+.black-backgorund {
+    position: relative;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.white-circle-one {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-bottom-right-radius: 100%;
+}
+
+.white-circle-two {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin-top: 1px;
+    border-top-right-radius: 100%;
+}
+
+.white-circle-three {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-bottom-left-radius: 100%;
+}
+
+.white-circle-four {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-top-left-radius: 100%;
+}
+
+.center-line {
+    position: absolute;
+    z-index: 110;
+    left: 180px;
+    width: 475px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.267);
+}
+
+.transparent-back {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(81.55px);
+    border: 1px solid  rgba(0, 0, 0, 0.1);
+    padding-right: 100px;
+    border-radius: 5px;
+}
+
+.transparent-back ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.transparent-back ul a{ 
+    padding: 35px 50px 35px 50px; 
+    text-decoration: none;
+    letter-spacing: 2.7px;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;  
+}
+
+.transparent-back ul li{ 
+    /* padding: 35px 60px 35px 65px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent-back ul li:hover {
+    border-bottom: 3px solid #FFFFFF;
+} 
+
+.transparent-back ul span {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px; 
+    letter-spacing: 2.7px;
+    padding-right: 10px;
+}
+
+/*---------------------------------------------- main title ----------------------------------------*/
+
+.main-title {
+    margin-top: 60px;
+    margin-left: 180px;
+    /* border: 2px solid red; */
+}
+
+.main-title span {
+    font-family: "Barlow Condensed", serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;
+    color: rgba(255, 255, 255, 0.25);
+    padding-right: 20px;
+}
+
+.main-title h1 { 
+    font-family: "Barlow Condensed", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;   
+}
+
+/*------------------------------------------- content section  ----------------------------------------*/
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/*------------------------------------------ slider section  -----------------------------------------*/
+
+.slider-section a {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: "bellfair", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.67px;
+    letter-spacing: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(11, 13, 23, 1);
+    margin-bottom: 55px;
+}
+
+/*------------------------------------------ content section  -----------------------------------------*/
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.outer-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 160px;
+}
+
+.conatiner {
+    display: flex;
+    padding-top: 60px;
+}
+
+.content-text-section {
+    padding-left: 150px;
+}
+
+.content-text-section h6 {
+    font-family: "Barlow Condensed", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 2.700000047683716px;
+    color: rgba(208, 214, 249, 1);
+}
+
+.content-text-section h1 { 
+    padding-top: 20px;
+    font-family: "Bellefair";
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64.18px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+.content-text-section p{
+    padding-top: 20px;
+    font-family: "Barlow", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(208, 214, 249, 1);
+    width: 446px;
+}
