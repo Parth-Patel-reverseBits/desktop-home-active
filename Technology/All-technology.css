@@ -84,7 +84,7 @@ nav {
 }
 
 .transparent-back {
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.55px);
     border: 1px solid  rgba(0, 0, 0, 0.1);
     padding-right: 100px;
@@ -233,3 +233,125 @@ nav {
     color: rgba(208, 214, 249, 1);
     width: 446px;
 }
+
+
+/*----------------------------------------- tablet design ----------------------------------------------*/
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+    body {
+        background: url(technology-backgorund.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow: auto;
+        /* border: 2px solid red; */
+    }
+
+    nav {
+        margin-top: 0;
+        align-items: flex-start;
+    }
+
+    .logo-section {
+        padding-top: 23px;
+        padding-left: 30px;
+    }
+
+    .center-line {
+        display: none;
+    }
+
+    .transparent-back { 
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .transparent-back ul a{  
+        padding: 35px 20px 35px 20px; 
+    }
+
+    .transparent-back ul span {
+        display: none;
+    }
+
+    /*---------------------------------- main title style --------------------------------------------*/
+    .main-title { 
+        /* border: 2px solid red; */
+        margin-left: 30px;       
+    }
+
+    .main-title h1 { 
+        font-size: 20px;
+    }
+
+    .main-title span { 
+        font-size: 20px;
+    }
+
+    /*---------------------------------- slider section -------------------------------------------- */
+
+    .slider-section {
+        display: flex;
+        /* border: 2px solid red; */
+    }
+
+    .slider-section a{ 
+        margin: 0px 20px 0px 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    /*----------------------------------- content section  -------------------------------------------*/
+
+    .content-section {
+        flex-direction: column-reverse;
+        /* border: 2px solid red; */
+    }
+
+    .outer-container {
+        padding: 0;
+        /* border: 2px solid yellow; */
+    }
+
+    .conatiner {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* border: 5px solid blue; */
+    }
+
+    .content-text-section {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        /* border: 5px solid green; */
+    }
+
+    .content-text-section h6 {
+        margin-top: 50px;
+    }
+
+    .content-text-section p{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        /* border: 2px solid red; */
+    }
+
+    /*-------------------------------------- image section -------------------------------------------*/
+
+    .image-section {
+        width: 100%;
+        display: flex;
+        /* border: 2px solid red; */
+    }
+
+    .image-section img {
+        width: 100%;
+        /* object-fit: cover; */
+    }
+
+}
+
