@@ -257,7 +257,6 @@ nav {
 
 /*----------------------------------------- tablet design ----------------------------------------------*/
 
-/*--------------------------------------- tablet design  -------------------------------------------*/
 
 
 @media (min-width: 600px) and (max-width: 768px) {
@@ -266,12 +265,13 @@ nav {
         background: url(Desktop-Crew-A.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        overflow: auto;
+        /* border: 2px solid red; */
     }
 
-    .header-nav {
+    nav {
         margin-top: 0;
         align-items: flex-start;
-        /* border: 2px solid red; */
     }
 
     .logo-section {
@@ -298,74 +298,76 @@ nav {
         display: none;
     }
 
-    /*-------------------------------------- content menu ------------------------------------- */
-
-    body {
-        overflow: auto;
-    }
-
+    /*---------------------------------- main title style --------------------------------------------*/
     .main-title { 
         /* border: 2px solid red; */
         margin-left: 30px;       
     }
 
-    .destination-nav-menu  {
-        position: absolute;
-        width: 100%;
-        bottom: 5%;  
-        /* border: 2px solid red; */
-        /* margin: 0 auto; */
+    .main-title h1 { 
+        font-size: 20px;
     }
 
-    .moon-left-section img { 
-        width: 300px;
-        height: 300px;
-        /* border: 2px solid red; */
-        margin-top: 10%;
-        margin-bottom: 10%;
+    .main-title span { 
+        font-size: 20px;
     }
 
+    /*--------------------------------- content section  ---------------------------------------------*/
 
-    .moon-sec {
+    .container { 
         flex-direction: column;
         align-items: center;
+        margin-top: 50px;
         /* border: 2px solid red; */
     }
 
-    .moon-left-section {
-        padding: 0;
-        width: 100%;
-    }
-
-    .moon-right-section { 
-        /* border: 2px solid red; */
-        width: 100%;
-        padding: 0;
+    .content-section { 
         text-align: center;
-    }
-
-    .moon-right-section h1 { 
         padding: 0;
-        margin-top: 10%;
+        width: 100%;
         /* border: 2px solid red; */
     }
 
-    .moon-right-section p { 
-        width: 80%;
-        margin: 0 auto;
-        padding: 0;
+    .inner-content-section {
+        width: 100%;
+        /* border: 2px solid red; */
     }
 
-    .footer-section { 
-        margin: 0 auto;
-        padding: 20px;
+    .content-section h3 { 
+        font-size: 24px;
     }
 
-    .moon-right-section span{ 
-        margin: 20px auto;
-        width: 80%;
-        height: 1px;
-        background-color: rgba(56, 59, 75, 1);
+    .content-section h1 {
+        font-size: 40px;
     }
+
+    .content-section p {
+        font-size: 16px;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    /*----------------------------------- slider section  -------------------------------------------*/
+
+    .slider-section { 
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    /*------------------------------------- image section --------------------------------------------*/
+
+    .image-section { 
+        margin-top: 50px;
+    }
+
+    .image-section img { 
+        position: static;
+        width: 500px;
+        height: 500px;
+    }
+
+    
 
 }
