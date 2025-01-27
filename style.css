@@ -209,14 +209,12 @@ main {
     body {
         background: url(Desktop-Home-Tablet.png);
         background-repeat: no-repeat;
-        background-size: 100%;
-        /* border: 2px solid red; */
+        background-size: 100% 100%;
     }
 
     nav {
         margin-top: 0;
         align-items: flex-start;
-        /* border: 2px solid red; */
     }
 
     .logo-section {
@@ -249,6 +247,7 @@ main {
         align-items: center;
         text-align: center;
         margin-top: 20vh;
+        /* border: 2px solid red; */
     }
 
     .main-left-section {
@@ -268,6 +267,7 @@ main {
     }
 
     .main-left-section .last-para{
+        padding-top: 20px;
         width: 450px;
         font-family: "Barlow", serif;
         font-size: 16px;
