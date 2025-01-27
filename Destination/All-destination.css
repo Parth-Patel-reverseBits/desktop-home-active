@@ -86,7 +86,7 @@ body {
 
 
 .transparent-back {
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background-color: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.55px);
     border: 1px solid  rgba(0, 0, 0, 0.1);
     padding-right: 100px;
@@ -271,3 +271,116 @@ body {
     font-weight: 400;
 }
 
+
+/*--------------------------------------- tablet design  -------------------------------------------*/
+
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+    body {
+        background: url(moon-background.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .header-nav {
+        margin-top: 0;
+        align-items: flex-start;
+        /* border: 2px solid red; */
+    }
+
+    .logo-section {
+        padding-top: 23px;
+        padding-left: 30px;
+    }
+
+    .center-line {
+        display: none;
+    }
+
+    .transparent-back { 
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .transparent-back ul a{  
+        padding: 35px 20px 35px 20px; 
+    }
+
+    .transparent-back ul span {
+        display: none;
+    }
+
+    /*-------------------------------------- content menu ------------------------------------- */
+
+    body {
+        overflow: auto;
+    }
+
+    .main-title { 
+        /* border: 2px solid red; */
+        margin-left: 30px;       
+    }
+
+    .destination-nav-menu  {
+        position: absolute;
+        width: 100%;
+        bottom: 5%;  
+        /* border: 2px solid red; */
+        /* margin: 0 auto; */
+    }
+
+    .moon-left-section img { 
+        width: 300px;
+        height: 300px;
+        /* border: 2px solid red; */
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+
+    .moon-sec {
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+
+    .moon-left-section {
+        padding: 0;
+        width: 100%;
+    }
+
+    .moon-right-section { 
+        /* border: 2px solid red; */
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .moon-right-section h1 { 
+        padding: 0;
+        margin-top: 10%;
+        /* border: 2px solid red; */
+    }
+
+    .moon-right-section p { 
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .footer-section { 
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .moon-right-section span{ 
+        margin: 20px auto;
+        width: 80%;
+        height: 1px;
+        background-color: rgba(56, 59, 75, 1);
+    }
+
+}
