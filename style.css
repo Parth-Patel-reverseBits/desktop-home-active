@@ -94,7 +94,6 @@ nav {
 .transparent-back ul {
     list-style-type: none;
     display: flex;
-    
 }
 
 .transparent-back ul a{ 
@@ -105,10 +104,10 @@ nav {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;  
+
 }
 
 .transparent-back ul li{ 
-    /* padding: 35px 60px 35px 65px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +160,7 @@ main {
 }
 
 .main-left-section .last-para {
-    font-family: "Barlow Condensed", serif;
+    font-family: "Barlow", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -247,11 +246,9 @@ main {
         align-items: center;
         text-align: center;
         margin-top: 20vh;
-        /* border: 2px solid red; */
     }
 
     .main-left-section {
-        /* border: 2px solid red; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -272,13 +269,147 @@ main {
         font-family: "Barlow", serif;
         font-size: 16px;
         letter-spacing: 0;
-        /* border: 2px solid red; */
     }
     
     .main-right-section {
         padding-top: 10vh;
         padding-bottom: 10vh;
     }
+}
 
+/*----------------------------------------- mobile design  --------------------------------------------*/
 
+@media (min-width: 320px) and (max-width: 600px) {
+    body {
+        background-image: url('Desktop-Home-Mobile.png');
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+    nav {
+        position: relative;
+        margin: 0;
+        align-items: center;
+        padding:0 16px;
+    } 
+
+    .logo-section {
+        padding:0;
+    }
+
+    .center-line {
+        display: none;
+    }
+
+    .right-section {
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        transition: 1s;
+    }
+
+    .transparent-back {  
+        padding: 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger-menu .bar-1, .bar-2, .bar-3 {
+        width: 40px;
+        height: 5px;
+        background-color: #FFFFFF;
+        margin-bottom: 5px;
+        z-index: 100;
+        transition: all 0.5s;
+    }
+
+    #ham-clcik:checked ~ .right-section {
+        width: 65%;
+    }
+
+    #ham-clcik:checked ~ .ham-click .hamburger-menu .bar-1 {
+        transform: rotate(-50deg);
+        translate: 0px 10px;
+    }
+
+    #ham-clcik:checked ~ .ham-click .hamburger-menu .bar-2 { 
+        display: none;
+    }
+
+    #ham-clcik:checked ~ .ham-click .hamburger-menu .bar-3 {  
+        transform: rotate(50deg);
+    }
+    
+    
+
+    .transparent-back ul{
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        padding-top: 20vh;
+    }
+
+    .transparent-back ul li{ 
+        justify-content: flex-start;
+    }
+    
+    .transparent-back ul li:hover { 
+        border: none;   
+    } 
+
+    .transparent-back ul a{ 
+        padding: 0px 0px 50px 30px;
+    }
+
+    /*------------------------------------ main content section --------------------------------------*/
+
+    main {
+        flex-direction: column;
+        margin: 10% 0px 0px 0px;
+    }
+
+    /*------------------------------------------ main title --------------------------------------------*/
+
+    .main-left-section {
+        width: 100%;
+    }
+    
+
+    .main-left-section p {  
+        font-size: 16px;
+        text-align: center;
+        padding:0 16px;
+    }
+
+    .main-left-section h1 { 
+        width: 100%;
+        text-align: center;
+        padding:0 16px;
+    }
+
+    .main-left-section .last-para {
+        letter-spacing: 1px;
+        padding:0 16px;
+    }
+
+    /*----------------------------------------- white ball section -------------------------------------*/
+
+    .main-right-section .white-back { 
+        width: 150px;
+        height: 150px;
+    }
+    
+    .main-right-section .white-back h3 {
+        font-size: 20px;
+    }
+
+    .outer-white-back { 
+        padding: 30px;
+    }
 }
