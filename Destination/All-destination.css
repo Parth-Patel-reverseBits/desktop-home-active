@@ -426,6 +426,10 @@ body {
     .center-line {
         display: none;
     }
+    
+    .transparent-back {  
+        padding: 0;
+    }
 
     .right-section {
         height: 100%;
@@ -474,7 +478,7 @@ body {
         flex-direction: column;
         height: 100vh;
         width: 100%;
-        padding-top: 20vh;
+        padding-top: 15vh;
     }
 
     .transparent-back ul li{ 
@@ -486,7 +490,8 @@ body {
     } 
 
     .transparent-back ul a{ 
-        padding: 0px 0px 50px 30px;
+        padding: 30px;
+        width: 100%;
     }
 
     .main-title {

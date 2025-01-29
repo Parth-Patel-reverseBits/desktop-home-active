@@ -352,7 +352,7 @@ main {
         flex-direction: column;
         height: 100vh;
         width: 100%;
-        padding-top: 20vh;
+        padding-top: 15vh;
     }
 
     .transparent-back ul li{ 
@@ -364,7 +364,8 @@ main {
     } 
 
     .transparent-back ul a{ 
-        padding: 0px 0px 50px 30px;
+        padding: 30px;
+        width: 100%;
     }
 
     /*------------------------------------ main content section --------------------------------------*/
