@@ -402,7 +402,6 @@ body {
 /*------------------------------------------ mobile design --------------------------------------------*/
 
 @media (min-width: 320px) and (max-width: 600px) {
-
     body {
         background-repeat: no-repeat;
         height: 100vh;
