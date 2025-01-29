@@ -283,6 +283,7 @@ body {
         background-size: 100% 100%;
     }
 
+    
     .header-nav {
         margin-top: 0;
         align-items: flex-start;
@@ -394,6 +395,200 @@ body {
         width: 80%;
         height: 1px;
         background-color: rgba(56, 59, 75, 1);
+    }
+
+}
+
+/*------------------------------------------ mobile design --------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+    body {
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        overflow: auto;
+        /* border: 2px solid red; */
+    }
+
+    .header-nav {
+        margin: 1em 0 0 0;
+        /* border: 2px solid blue; */
+    }
+
+    .logo-section {
+        padding: 0 0 0 1em;
+        /* border: 2px solid purple; */
+    }
+
+    .center-line {
+        display: none;
+    }
+
+    .right-section {
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        transition: 1s;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        padding: 0 1em 0 0;
+    }
+
+    .hamburger-menu .bar-1, .bar-2, .bar-3 {
+        width: 40px;
+        height: 5px;
+        background-color: #FFFFFF;
+        margin-bottom: 5px;
+        z-index: 100;
+        transition: all 0.5s;
+    }
+
+    #ham-clcik:checked ~ .right-section {
+        width: 65%;
+    }
+
+    #ham-clcik:checked ~ .ham-click .hamburger-menu .bar-1 {
+        transform: rotate(-50deg);
+        translate: 0px 10px;
+    }
+
+    #ham-clcik:checked ~ .ham-click .hamburger-menu .bar-2 { 
+        display: none;
+    }
+
+    #ham-clcik:checked ~ .ham-click .hamburger-menu .bar-3 {  
+        transform: rotate(50deg);
+    }
+
+    .transparent-back ul{
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        padding-top: 20vh;
+    }
+
+    .transparent-back ul li{ 
+        justify-content: flex-start;
+    }
+    
+    .transparent-back ul li:hover { 
+        border: none;   
+    } 
+
+    .transparent-back ul a{ 
+        padding: 0px 0px 50px 30px;
+    }
+
+    .main-title {
+        margin: 0;
+        text-align: center;
+        /* border: 2px solid red; */
+    }
+
+    .main-title h1 {
+        font-size: 22px;
+    }
+
+    .main-title span { 
+        font-size: 22px;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .destination-nav-menu {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .destination-nav-menu ul {
+        padding: 0;
+        /* border: 2px solid yellow; */
+    }
+
+    .moon-sec {
+        display: block;
+        /* border: 2px solid red; */
+    }
+
+    .moon-left-section {
+        width: 100%;
+        padding: 4em;
+        /* border: 2px solid green; */
+    }
+
+    .moon-left-section img {
+        width: 100%;
+        height: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .moon-right-section {
+        width: 100%;
+    }
+
+    .moon-right-section p {
+        margin: 0;
+        padding: 0 1em 0 1em;
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .moon-right-section h1 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 5rem;
+        text-align: center;
+        /* border: 2px solid yellow; */
+    }
+
+    .moon-right-section span {
+        padding: 0 1em 0 1em;
+        margin: 2em auto;
+        width: 90%;
+    }
+
+    .footer-section  {
+        padding: 0 0 2em 0;
+        margin: 0 0 0 0;
+        display: block;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+
+    .footer-left-sec {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid green; */
+    }
+
+    .footer-right-sec {
+        padding: 0;
+        margin: 3em 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid red; */
     }
 
 }
